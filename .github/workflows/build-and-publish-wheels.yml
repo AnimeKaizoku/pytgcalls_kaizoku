@@ -18,9 +18,43 @@ on:
   workflow_dispatch:
 
 jobs:
+  pytgwin-build:
+    runs-on: windows-latest
+    strategy:
+      matrix:
+        python-version: [ '3.7', '3.8', '3.9', '3.10', '3.11' ]
+    steps:
+      - name: Get Branch Name
+        run: echo "::set-output name=branch::${GITHUB_REF#refs/heads/}"
+        id: github_info
+      - name: Checkout ${{ steps.github_info.outputs.branch }}
+        uses: actions/checkout@v2
+        with:
+          ref: ${{ steps.github_info.outputs.branch }}
+      - name: Setup Node
+        uses: actions/setup-node@v2
+        with:
+          node-version: '18'
+      - name: Setup Python${{ matrix.python-version }}
+        uses: actions/setup-python@v2
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install pip requirements
+        run: |
+          python -m pip install wheel setuptools
+      - name: Build wheel for Python${{ matrix.python-version }}
+        run: |
+          python setup.py sdist bdist_wheel
+      - name: Upload artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: pytgcalls-python${{ matrix.python-version }}
+          path:
+            dist/*.whl
   build-n-publish:
     name: Build and publish to PyPI
     runs-on: windows-latest
+    needs: [pytgwin-build]
     steps:
       - name: Install Python3.11
         uses: actions/setup-python@v2
