@@ -13,7 +13,7 @@
         Documentation
     </a>
     •
-    <a href="https://pypi.org/project/py-tgcalls/">
+    <a href="https://pypi.org/project/py-tgcalls-kaizoku/">
         PyPi
     </a>
     •
@@ -30,13 +30,13 @@
 # PyTgCalls
 
 [![pre-commit.ci status][pre-commit.ci-badge]][pre-commit.ci]
-[![PyPI](https://img.shields.io/pypi/v/py-tgcalls.svg?style=flat)](https://pypi.org/project/py-tgcalls/)
-[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/py-tgcalls)](https://www.python.org/)
+[![PyPI](https://img.shields.io/pypi/v/py-tgcalls-kaizoku.svg?style=flat)](https://pypi.org/project/py-tgcalls-kaizoku/)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/py-tgcalls-kaizoku)](https://www.python.org/)
 [![GitHub](https://img.shields.io/github/license/pytgcalls/pytgcalls)](https://github.com/pytgcalls/pytgcalls/blob/master/LICENSE)
 ![OS](https://img.shields.io/badge/platform-Linux%20%7C%20WSL2.0%20%7C%20Windows%20%7C%20macOS-lightgrey)
 [![Node Version](https://img.shields.io/badge/node-%3E%20%3D%2015.0.0%20-brightgreen)](https://nodejs.org/it/)
 ![Architectures](https://img.shields.io/badge/architectures-x86__64%20%7C%20arm64v8%20%7C%20win__amd64%20%7C%20darwin__x64-blue)
-[![Downloads](https://pepy.tech/badge/py-tgcalls)](https://pepy.tech/project/py-tgcalls)
+[![Downloads](https://pepy.tech/badge/py-tgcalls-kaizoku)](https://pepy.tech/project/py-tgcalls-kaizoku)
 
 This project allows making Telegram group call using MtProto and WebRTC, this is possible thanks to the power of NodeJS's WebRTC library and [@evgeny-nadymov]
 
@@ -51,7 +51,7 @@ Here's how to install the PyTgCalls lib, the commands are given below:
 pip install git+https://github.com/pytgcalls/pytgcalls -U
 
 # With PyPi (Recommended)
-pip install py-tgcalls -U
+pip install py-tgcalls-kaizoku -U
 ```
 
 ## Conversion command (Video)

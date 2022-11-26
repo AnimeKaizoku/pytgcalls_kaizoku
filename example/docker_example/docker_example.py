@@ -6,7 +6,7 @@ from pytgcalls import StreamType
 from pytgcalls.types.input_stream import AudioPiped
 
 app = Client(
-    'py-tgcalls',
+    'py-tgcalls-kaizoku',
     api_id=12345,
     api_hash='0123456789abcdef0123456789abcdef',
 )

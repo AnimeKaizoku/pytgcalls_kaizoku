@@ -10,7 +10,7 @@ RUN \
   npm i -g npm@^8 && \
   curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python && ln -s /root/.poetry/bin/poetry /usr/local/bin && \
   rm -rf /var/lib/apt/lists/*
-RUN python3.9 -m pip install py-tgcalls
+RUN python3.9 -m pip install py-tgcalls-kaizoku
 RUN apt update && apt install -y ffmpeg
 WORKDIR /usr/src/installer
 COPY linux_mount.sh /usr/src/installer

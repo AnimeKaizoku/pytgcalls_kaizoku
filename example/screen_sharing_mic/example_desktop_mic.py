@@ -7,7 +7,7 @@ from pytgcalls.media_devices import MediaDevices
 from pytgcalls.types import CaptureAVDeviceDesktop
 
 app = Client(
-    'py-tgcalls',
+    'py-tgcalls-kaizoku',
     api_id=123456789,
     api_hash='abcdef12345',
 )

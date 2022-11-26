@@ -30,7 +30,7 @@ def get_youtube_stream():
 
 
 app = Client(
-    'py-tgcalls',
+    'py-tgcalls-kaizoku',
     api_id=123456789,
     api_hash='abcdef12345',
 )

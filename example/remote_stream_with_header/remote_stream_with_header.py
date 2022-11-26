@@ -9,7 +9,7 @@ from pytgcalls.types.input_stream.quality import HighQualityAudio
 from pytgcalls.types.input_stream.quality import HighQualityVideo
 
 app = Client(
-    'py-tgcalls',
+    'py-tgcalls-kaizoku',
     api_id=123456789,
     api_hash='abcdef12345',
 )

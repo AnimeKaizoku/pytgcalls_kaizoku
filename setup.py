@@ -118,7 +118,7 @@ with open(os.path.join(base_path, 'README.md'), encoding='utf-8') as f:
     readme = f.read()
 
 setup(
-    name='py-tgcalls',
+    name='py-tgcalls-kaizoku',
     version='0.9.5',
     long_description=readme,
     long_description_content_type='text/markdown',
@@ -136,6 +136,7 @@ setup(
         'Programming Language :: Python :: 3.8',
         'Programming Language :: Python :: 3.9',
         'Programming Language :: Python :: 3.10',
+        'Programming Language :: Python :: 3.11',
         'Programming Language :: Python :: Implementation :: CPython',
         'Programming Language :: Python :: Implementation :: PyPy',
     ],
